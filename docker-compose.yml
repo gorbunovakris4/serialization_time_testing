@@ -1,0 +1,52 @@
+version: '3.8'
+services:
+  pickle:
+    container_name: pickle_tst
+    image: pickle_tst:1.0
+    restart: unless-stopped
+    ports:
+      - 2001:2001/udp
+
+  json:
+    container_name: json_tst
+    image: json_tst:1.0
+    restart: unless-stopped
+    ports:
+      - 2002:2002/udp
+
+  protobuf:
+    container_name: proto_tst
+    image: proto_tst:1.0
+    restart: unless-stopped
+    environment:
+      PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION: python
+    ports:
+      - 2003:2003/udp
+
+  xml:
+    container_name: xml_tst
+    image: xml_tst:1.0
+    restart: unless-stopped
+    ports:
+      - 2004:2004/udp
+
+  avro:
+    container_name: avro_tst
+    image: avro_tst:1.0
+    restart: unless-stopped
+    ports:
+      - 2005:2005/udp
+
+  mpk:
+    container_name: mpk_tst
+    image: mpk_tst:1.0
+    restart: unless-stopped
+    ports:
+      - 2006:2006/udp
+
+  yaml:
+    container_name: yaml_tst
+    image: yaml_tst:1.0
+    restart: unless-stopped
+    ports:
+      - 2007:2007/udp
