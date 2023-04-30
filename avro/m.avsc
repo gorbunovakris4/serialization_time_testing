@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "Test",
+  "fields": [
+    {"name": "root", "type": {"type": "map", "values": ["int", "float", "string", {"type":"array", "items": ["int", "string"]}]
+    }}
+  ]
+}
