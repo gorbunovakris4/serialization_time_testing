@@ -60,3 +60,15 @@ Example of the response
 ```bash
 Pickle - 6842 - 99ms - 45ms
 ```
+
+## Data structure
+
+Testing data structure contains several types
+
+```python
+Data = dict(root=dict(int_1=2 ** 9, float_1=3.14, str_1="short string",
+                      str_2="I AM LONG STRING, VERY VERY LONG!!!!!!!!!!!!!!!!!!!!",
+                      lst_int=[i ** 2 for i in range(1000)],
+                      lst_str=[str(i) * 10 for i in range(100)]))
+
+```
