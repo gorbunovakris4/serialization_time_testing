@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package test;
+
+message Inner {
+    optional int32 int_1 = 1;
+    optional float float_1 = 2;
+    optional string str_1 = 3;
+    optional string str_2 = 4;
+    repeated int32 lst_int = 5;
+    repeated string lst_str = 6;
+}
+
+message Test {
+  optional Inner root = 1;
+}
